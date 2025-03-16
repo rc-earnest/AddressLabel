@@ -2,7 +2,7 @@
 'RCET 2265
 'Spring 2025
 'Address Label Program
-' git link
+'https://github.com/rc-earnest/AddressLabel.git
 Imports System.Windows.Forms.VisualStyles.VisualStyleElement
 
 Public Class AddressLabelForm
