@@ -22,6 +22,7 @@ Partial Class AddressLabelForm
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Me.FirstNameTextBox = New System.Windows.Forms.TextBox()
         Me.LastNameTextBox = New System.Windows.Forms.TextBox()
         Me.StreetAddressTextBox = New System.Windows.Forms.TextBox()
@@ -40,6 +41,7 @@ Partial Class AddressLabelForm
         Me.InputGroupBox = New System.Windows.Forms.GroupBox()
         Me.OutputGroupBox = New System.Windows.Forms.GroupBox()
         Me.DisplayLabel = New System.Windows.Forms.Label()
+        Me.ToolTip1 = New System.Windows.Forms.ToolTip(Me.components)
         Me.InputGroupBox.SuspendLayout()
         Me.OutputGroupBox.SuspendLayout()
         Me.SuspendLayout()
@@ -69,7 +71,7 @@ Partial Class AddressLabelForm
         '
         Me.CityTextBox.Location = New System.Drawing.Point(42, 200)
         Me.CityTextBox.Name = "CityTextBox"
-        Me.CityTextBox.Size = New System.Drawing.Size(96, 22)
+        Me.CityTextBox.Size = New System.Drawing.Size(185, 22)
         Me.CityTextBox.TabIndex = 3
         '
         'StateTextBox
@@ -142,7 +144,7 @@ Partial Class AddressLabelForm
         '
         'DisplayButton
         '
-        Me.DisplayButton.Location = New System.Drawing.Point(432, 415)
+        Me.DisplayButton.Location = New System.Drawing.Point(460, 415)
         Me.DisplayButton.Name = "DisplayButton"
         Me.DisplayButton.Size = New System.Drawing.Size(75, 23)
         Me.DisplayButton.TabIndex = 12
@@ -151,7 +153,7 @@ Partial Class AddressLabelForm
         '
         'ClearButton
         '
-        Me.ClearButton.Location = New System.Drawing.Point(542, 415)
+        Me.ClearButton.Location = New System.Drawing.Point(558, 415)
         Me.ClearButton.Name = "ClearButton"
         Me.ClearButton.Size = New System.Drawing.Size(75, 23)
         Me.ClearButton.TabIndex = 13
@@ -160,7 +162,7 @@ Partial Class AddressLabelForm
         '
         'ExitButton
         '
-        Me.ExitButton.Location = New System.Drawing.Point(658, 415)
+        Me.ExitButton.Location = New System.Drawing.Point(657, 415)
         Me.ExitButton.Name = "ExitButton"
         Me.ExitButton.Size = New System.Drawing.Size(75, 23)
         Me.ExitButton.TabIndex = 14
@@ -245,4 +247,5 @@ Partial Class AddressLabelForm
     Friend WithEvents InputGroupBox As GroupBox
     Friend WithEvents OutputGroupBox As GroupBox
     Friend WithEvents DisplayLabel As Label
+    Friend WithEvents ToolTip1 As ToolTip
 End Class
